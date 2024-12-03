@@ -1,0 +1,557 @@
+* {
+  background-color: #212528;
+  color: white;
+  font-family: sans-serif;
+}
+
+
+.Header-full {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+.searcher-inp {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(31, 31, 31);
+}
+
+.searcher-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  margin-left: 10px;
+  border: none;
+}
+
+.curentloc {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgb(255, 136, 0);
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+  border: none;
+}
+
+.weatherh3 {
+  padding: 0px;
+  font-size: 30px;
+}
+
+.sidebar {
+  padding-top: 120px;
+  margin-left: 60px;
+  width: 450px;
+}
+
+.uppercard {
+  background-color: #282C2D;
+  border-radius: 15px;
+  width: 90%;
+  padding: 15px;
+}
+
+.colordiv {
+  background-color: #282C2D;
+}
+
+.upper-dower {
+  background-color: #282C2D;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.celcium_cloud {
+  background-color: #282C2D;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+
+}
+
+.forecastitem {
+  background-color: #282C2D;
+  display: flex;
+  width: 90%;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.forecasts {
+  padding: 0px;
+}
+
+h5 {
+  margin-left: 60px;
+  margin-right: 15px;
+}
+
+.gradus {
+  font-size: 40px;
+  width: 100%;
+  background-color: #282C2D;
+}
+
+.colordivD {
+  color: gray;
+  background-color: #282C2D;
+}
+
+.mid-full {
+  padding-top: 100px;
+  margin-left: 40px;
+
+}
+
+.range {
+  font-size: 40px;
+  background-color: #282C2D;
+}
+
+.typerange {
+  width: 100px;
+  font-size: 20px;
+  color: gray;
+  background-color: #282C2D;
+}
+
+.singletpye {
+  align-items: center;
+  text-align: center;
+  width: 110px;
+  margin-left: 15px;
+  background-color: #282C2D;
+}
+
+.airqualitycard {
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #282C2D;
+  width: 620px;
+  height: 370px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.notheader{
+  max-width: 1440px;
+  width: 100vh;
+
+margin-left: auto;
+margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.cards-today {
+  display: flex;
+}
+
+.sunrise {
+  width: 120px;
+  height: 100px;
+  background-color: #282C2D;
+}
+
+.sunrised {
+  display: flex;
+  align-items: start;
+  padding: 5px;
+  background-color: #282C2D;
+  margin-top: 20px;
+  min-width: 400px;
+  h2{
+    background-color: #282C2D;
+  }
+}
+
+.setsun {
+  background-color: #282C2D;
+  border-radius: 15px;
+  height: 370px;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  background-color: #282C2D;
+}
+
+.singleinfo {
+  display: flex;
+  height: 80px;
+  width: 160px;
+  border-radius: 15px;
+  background-color: #282C2D;
+  margin-top: 20px;
+  justify-content: space-between;
+  justify-content: center;
+  padding: 10px;
+}
+
+.downlist {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.typicard {
+  font-size: 20px;
+  margin-top: 25px;
+  background-color: #282C2D;
+
+}
+
+.typicardrange {
+  margin-top: 25px;
+  background-color: #282C2D;
+}
+
+.mided {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.singleinfo {
+  margin-right: 60px;
+  margin-left: 15px;
+  width: 250px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .Header-full {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searcher-inp {
+    margin-left: 0px;
+  }
+
+  .setsun{
+    font-size: 10px;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 475px) {
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 90%;
+    width: 90%;
+  }
+
+  .sunrised{
+    min-width: 250px;
+    font-size: 15px;
+  }
+
+  .Header-full {
+    width: 100%;
+  }
+
+  .searcher-inp {
+    width: 100%;
+  }
+
+  .searcher-btn {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .curentloc {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .notheader {
+    padding-top: 140px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .cards-today {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .downlist {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .notheader{
+    width: 90%;
+  }
+
+
+  .airqualitycard {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+
+  .airqualitycard,
+  .setsun {
+    padding: 15px;
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 20px;
+  }
+
+  .setsun{
+    font-size: 15px;
+  }
+
+  .mided {
+    gap: 10px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .singleinfo {
+    font-size: 17px;
+    width: 150px;
+    margin: 0px;
+    padding: 5px;
+  }
+
+  .setsun {
+    margin-left: 10px;
+  }
+}
+
+.notheader {
+  display: flex;
+}
+
+@media only screen and (max-width: 810px) {
+  .cards-today {
+    align-items: center;
+  }
+
+  .setsun{
+    font-size: 20px;
+ 
+  }
+
+  .uppercard {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .forecasts {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .forecastitem {
+    margin: 0%;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .notheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .airqualitycard {
+    margin: 0px;
+  }
+
+  .uppercard {
+    justify-content: center;
+    width: 90%;
+
+  }
+
+  .sidebar {
+    width: 100%;
+    margin: 0%;
+
+  }
+
+  .mid-full {
+    width: 100%;
+    margin-left: 0px;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mided {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .singleinfo {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.tools{
+  gap: 11.1px;
+}
+
+.good{
+  background-color: lawngreen;
+  display: flex;
+  padding: 5px;
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  max-height: 17px;
+  border-radius: 15px;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+
+}
+.gooda{
+  background-color: lawngreen;
+  padding: 0%;
+  width: 30px;
+  color: black;
+}
+
+.Moderate{ 
+  background-color: rgb(79, 158, 0);
+  display: flex;
+  padding: 5px;
+  width: 50px;
+  margin-left: 15px;
+  margin-top: 10px;
+  max-height: 17px;
+  border-radius: 15px;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+}
+.Moderatea{
+  background-color: rgb(79, 158, 0);
+  padding: 0%;
+  width: 30px;
+  margin-left: -12px;
+  color: rgb(255, 255, 255);
+}
+
+.fair{
+  background-color: rgb(149, 155, 36);
+  display: flex;
+  padding: 5px;
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  max-height: 17px;
+  border-radius: 15px;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+}
+.faira{
+  background-color: rgb(149, 155, 36);
+  padding: 0%;
+  width: 30px;
+  color: black;
+}
+
+.poor{
+  background-color: rgb(157, 116, 13);
+  display: flex;
+  padding: 5px;
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  max-height: 17px;
+  border-radius: 15px;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+}
+.poora{
+  background-color: rgb(157, 116, 13);
+  padding: 0%;
+  width: 30px;
+  color: black;
+}
+
+.veryPoor{
+  background-color: rgb(157, 13, 13);
+  display: flex;
+  padding: 5px;
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  max-height: 17px;
+  border-radius: 15px;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+}
+.veryPoora{
+  background-color: rgb(157, 13, 13);
+  padding: 0%;
+  width: 30px;
+  color: black;
+}
+
+
+@media only screen and (max-width: 417px){
+.sunrised{
+  font-size: 16px ;
+}
+}
+
+.downlistcard{
+  background-color: #282C2D;
+  border-radius: 15px;
+  width: 135px;
+}
+.imaag{
+  background-color: #282C2D;
+}
+h4{
+  background-color: #282C2D;
+}
+h6{
+  background-color: #282C2D;
+}
