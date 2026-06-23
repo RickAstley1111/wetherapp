@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -7,6 +7,7 @@ import Sidebar from './Components/SIdebar/Sidebar'
 import Mid from './Components/MId/Mid'
 import axios from 'axios'
 import { useRef } from 'react'
+import { ThemeContext } from './Context/ThemeContext'
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
   const [polution, setPolution] = useState(null)
   const [location , setLocation] = useState({lat: null , lon: null})
   const [error, setError] = useState(null)
+  const {isDark} = useContext(ThemeContext)
+  console.log(isDark);
+  
   const cityValue = useRef()
 
   const API_KEY = `b8a90c3dd0762dc0d30fe03b550af1de`
@@ -66,16 +70,13 @@ function App() {
 
 
   return (
-    <>
-
-
+    <div className={isDark? "dark" : "light"}>
       <div><Header setLocation={setLocation} setError={setError} cityValue={cityValue} searcherclick={searcherclick} /></div>
       <div className='notheader'>
         <Sidebar forecast={forecast} data={data} />
         <Mid data={data} polution={polution} forecast={forecast} />
       </div>
-
-    </>
+    </div>
 
   )
 }

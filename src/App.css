@@ -1,6 +1,6 @@
 * {
-  background-color: #212528;
-  color: white;
+  background-color: var(--bg-main);
+  color: var(--color-main);
   font-family: sans-serif;
 }
 
@@ -10,15 +10,17 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100%;
-  margin-top: -20px;
-  padding-bottom: 20px;
+  width:100%;
+  padding-right: 10px;
+  gap: 10px;
+  margin-top: -10px;
 }
 
 .searcher-inp {
   padding: 10px 20px;
   border-radius: 10px;
   border: none;
+  color: white;
   background-color: rgb(31, 31, 31);
 }
 
@@ -41,7 +43,9 @@
 }
 
 .weatherh3 {
+  color: var(--color-main);
   padding: 0px;
+  margin-left: 30px;
   font-size: 30px;
 }
 
@@ -52,18 +56,18 @@
 }
 
 .uppercard {
-  background-color: #282C2D;
+  background-color: var(--div-main);
   border-radius: 15px;
   width: 90%;
   padding: 15px;
 }
 
 .colordiv {
-  background-color: #282C2D;
+  background-color: var(--div-main);
 }
 
 .upper-dower {
-  background-color: #282C2D;
+  background-color: var(--div-main);
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -71,7 +75,7 @@
 }
 
 .celcium_cloud {
-  background-color: #282C2D;
+  background-color: var(--div-main);
   display: flex;
   align-items: center;
   width: 90%;
@@ -80,7 +84,7 @@
 }
 
 .forecastitem {
-  background-color: #282C2D;
+  background-color: var(--div-main);
   display: flex;
   width: 90%;
   padding: 15px;
@@ -101,12 +105,12 @@ h5 {
 .gradus {
   font-size: 40px;
   width: 100%;
-  background-color: #282C2D;
+  background-color: var(--div-main);
 }
 
 .colordivD {
   color: gray;
-  background-color: #282C2D;
+  background-color: var(--div-main);
 }
 
 .mid-full {
@@ -117,14 +121,14 @@ h5 {
 
 .range {
   font-size: 40px;
-  background-color: #282C2D;
+  background-color: var(--div-main);
 }
 
 .typerange {
   width: 100px;
   font-size: 20px;
   color: gray;
-  background-color: #282C2D;
+  background-color: var(--div-main);
 }
 
 .singletpye {
@@ -132,15 +136,14 @@ h5 {
   text-align: center;
   width: 110px;
   margin-left: 15px;
-  background-color: #282C2D;
+  background-color: var(--div-main);
 }
 
 .airqualitycard {
   margin-right: 20px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  background-color: #282C2D;
+  flex-direction: column;
+  background-color: var(--div-main);
   width: 620px;
   height: 370px;
   border-radius: 15px;
@@ -164,23 +167,23 @@ margin-right: auto;
 .sunrise {
   width: 120px;
   height: 100px;
-  background-color: #282C2D;
+  background-color: var(--div-main);
 }
 
 .sunrised {
   display: flex;
   align-items: start;
   padding: 5px;
-  background-color: #282C2D;
+  background-color: var(--div-main);
   margin-top: 20px;
   min-width: 400px;
   h2{
-    background-color: #282C2D;
+    background-color: var(--div-main);
   }
 }
 
 .setsun {
-  background-color: #282C2D;
+  background-color: var(--div-main);
   border-radius: 15px;
   height: 370px;
   margin-top: 10px;
@@ -192,7 +195,7 @@ margin-right: auto;
 }
 
 h1 {
-  background-color: #282C2D;
+  background-color: var(--div-main);
 }
 
 .singleinfo {
@@ -200,7 +203,7 @@ h1 {
   height: 80px;
   width: 160px;
   border-radius: 15px;
-  background-color: #282C2D;
+  background-color: var(--div-main);
   margin-top: 20px;
   justify-content: space-between;
   justify-content: center;
@@ -217,13 +220,13 @@ h1 {
 .typicard {
   font-size: 20px;
   margin-top: 25px;
-  background-color: #282C2D;
+  background-color: var(--div-main);
 
 }
 
 .typicardrange {
   margin-top: 25px;
-  background-color: #282C2D;
+  background-color: var(--div-main);
 }
 
 .mided {
@@ -280,7 +283,7 @@ h1 {
   }
 
   .searcher-inp {
-    width: 100%;
+    width: 90%;
   }
 
   .searcher-btn {
@@ -321,6 +324,9 @@ h1 {
 
 @media only screen and (max-width: 1050px) {
 
+  .uppercard{
+    padding-top: 50px;
+  }
   .airqualitycard,
   .setsun {
     padding: 15px;
@@ -329,7 +335,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: 20px;
+    margin-left: 25px;
   }
 
   .setsun{
@@ -435,10 +441,7 @@ h1 {
 .good{
   background-color: lawngreen;
   display: flex;
-  padding: 5px;
   width: 50px;
-  margin-left: 10px;
-  margin-top: 10px;
   max-height: 17px;
   border-radius: 15px;
   font-size: 11px;
@@ -456,10 +459,7 @@ h1 {
 .Moderate{ 
   background-color: rgb(79, 158, 0);
   display: flex;
-  padding: 5px;
-  width: 50px;
-  margin-left: 15px;
-  margin-top: 10px;
+  width: 65px;
   max-height: 17px;
   border-radius: 15px;
   font-size: 11px;
@@ -477,17 +477,16 @@ h1 {
 .fair{
   background-color: rgb(149, 155, 36);
   display: flex;
-  padding: 5px;
-  width: 50px;
-  margin-left: 10px;
-  margin-top: 10px;
+  width: 55px;
   max-height: 17px;
   border-radius: 15px;
   font-size: 11px;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
+
 .faira{
+  margin: 6px;
   background-color: rgb(149, 155, 36);
   padding: 0%;
   width: 30px;
@@ -497,10 +496,7 @@ h1 {
 .poor{
   background-color: rgb(157, 116, 13);
   display: flex;
-  padding: 5px;
   width: 50px;
-  margin-left: 10px;
-  margin-top: 10px;
   max-height: 17px;
   border-radius: 15px;
   font-size: 11px;
@@ -517,10 +513,7 @@ h1 {
 .veryPoor{
   background-color: rgb(157, 13, 13);
   display: flex;
-  padding: 5px;
   width: 50px;
-  margin-left: 10px;
-  margin-top: 10px;
   max-height: 17px;
   border-radius: 15px;
   font-size: 11px;
@@ -542,16 +535,51 @@ h1 {
 }
 
 .downlistcard{
-  background-color: #282C2D;
+  background-color: var(--div-main);
   border-radius: 15px;
   width: 135px;
 }
 .imaag{
-  background-color: #282C2D;
+  background-color: var(--div-main);
 }
 h4{
-  background-color: #282C2D;
+  background-color: var(--div-main);
 }
 h6{
-  background-color: #282C2D;
+  background-color: var(--div-main);
+}
+
+.themebtn{
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(153, 206, 227);
+  border-radius: 15px;
+}
+
+.saviour{
+  margin-top: 5px;
+  border-radius: 15px;
+  gap: 10px;
+  background-color: var(--div-main);
+  flex-wrap: wrap;
+  display: flex;
+}
+.spanheader{
+background-color: var(--div-main);
+width: 97%;
+justify-content: space-between;
+margin: 10px;
+display: flex;
+text-align: center;
+}
+.spanheadertext{
+  background-color: var(--div-main);
+  color: gray;
+}
+.opitionLang{
+  padding: 10px;
+  border-radius: 14px;
+  background-color: tomato;
+  margin-right: 10px;
 }

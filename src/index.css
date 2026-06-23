@@ -1,0 +1,21 @@
+.dark{
+    --bg-main: #212528;
+    --div-main: #282C2D;
+    --color-main: #fff;
+    transition: all 1s;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.light{
+ --bg-main:     #ffffff;
+ --div-main: #e0e0e0; 
+ --color-main: #212529; 
+ transition: all 1s;
+ margin-left: -10px;
+ margin-right: -10px;
+}
+
+div,h1,h2,h3,h4,h5,h6,img,svg,li,ul,p,option,select,button{
+    transition: all 1s;
+}
