@@ -39,7 +39,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${data?.coord.lat}&lon=${data?.coord.lon}&appid=${API_KEY}`)
+      .get(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${data?.coord.lat}&lon=${data?.coord.lon}&appid=${API_KEY}`)
       .then((res) => setPolution(res.data));
   }, [data])
 
@@ -50,7 +50,7 @@ function App() {
       Setforecast(res.data);
 
       axios
-      .get(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${data?.coord.lat}&lon=${data?.coord.lon}&appid=${API_KEY}`)
+      .get(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${data?.coord.lat}&lon=${data?.coord.lon}&appid=${API_KEY}`)
       .then((res) => setPolution(res.data));
     })
   }
@@ -62,7 +62,7 @@ function App() {
       Setforecast(res.data);
 
       axios
-      .get(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${location.lat}&lon=${location.lon}&appid=${API_KEY}`)
+      .get(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${location.lat}&lon=${location.lon}&appid=${API_KEY}`)
       .then((res) => setPolution(res.data));
     })
   },[location])
