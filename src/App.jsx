@@ -69,16 +69,23 @@ function App() {
 
 
 
-  return (
-    <div className={isDark? "dark" : "light"}>
-      <div><Header setLocation={setLocation} setError={setError} cityValue={cityValue} searcherclick={searcherclick} /></div>
+return (
+  <div className={isDark ? "dark" : "light"}>
+    <Header
+      setLocation={setLocation}
+      setError={setError}
+      cityValue={cityValue}
+      searcherclick={searcherclick}
+    />
+
+    <div className="container">
       <div className='notheader'>
         <Sidebar forecast={forecast} data={data} />
         <Mid data={data} polution={polution} forecast={forecast} />
       </div>
     </div>
-
-  )
+  </div>
+)
 }
 
 export default App
